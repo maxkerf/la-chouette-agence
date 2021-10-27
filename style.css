@@ -133,8 +133,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-	/* color: rgba(255, 255, 255, 0.6); */
-	color: #e5cfc5;
+	color: rgba(255, 255, 255, 0.6);
 }
 
 .d-bloc .a-btn:hover,
@@ -774,8 +773,7 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-	/* background-color: #f3976c; */
-	background-color: #a06950;
+	background-color: #f3976c;
 }
 
 .tc-white {
@@ -783,15 +781,12 @@ h4 {
 }
 
 .btn-atomic-tangerine {
-	/* background: #f3976c; */
-	background: #cd835c;
-	font-size: 20px;
+	background: #f3976c;
 	color: #ffffff !important;
 }
 
 .btn-atomic-tangerine:hover {
-	/* background: #c27956 !important; */
-	background: #a06950;
+	background: #c27956 !important;
 	color: #ffffff !important;
 }
 
@@ -1070,4 +1065,25 @@ blockquote p {
 
 figcaption {
 	color: #575757;
+}
+
+p {
+	font-size: 14px;
+}
+
+.d-bloc a .icon-md {
+	color: #e5cfc5;
+}
+
+.bgc-atomic-tangerine {
+	background-color: #a06950;
+}
+
+.btn-atomic-tangerine {
+	background: #cd835c;
+	font-size: 20px;
+}
+
+.btn-atomic-tangerine:hover {
+	background: #a06950;
 }
