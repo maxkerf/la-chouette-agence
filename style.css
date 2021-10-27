@@ -1085,9 +1085,13 @@ p {
 }
 
 .btn-atomic-tangerine:hover {
-	background: #a06950;
+	background: #a06950 !important;
 }
 
 .bg-presentation {
 	background-image: url("img/image-de-presentation.jpg");
+}
+
+.img-responsive {
+	margin: 0 auto;
 }
