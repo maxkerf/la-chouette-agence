@@ -1112,3 +1112,7 @@ h1 {
 .black-background {
 	background-color: #877545;
 }
+
+p.tc-white {
+	color: #fff !important;
+}
