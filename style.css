@@ -1095,3 +1095,7 @@ p {
 .img-responsive {
 	margin: 0 auto;
 }
+
+h2.mg-md.text-center.tc-white {
+	position: relative;
+}
