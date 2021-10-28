@@ -1116,3 +1116,9 @@ h1 {
 .tc-white {
 	color: #fff !important;
 }
+
+a:focus,
+button:focus {
+	outline: 5px auto #000 !important;
+	outline-offset: unset;
+}
