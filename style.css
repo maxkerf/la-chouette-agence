@@ -850,7 +850,9 @@ h4 {
 	}
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+/* W3C errors: min-device-width and max-device-width */
+
+/* @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
 	.b-parallax {
 		background-attachment: scroll;
 	}
@@ -860,7 +862,23 @@ h4 {
 	.b-parallax {
 		background-attachment: scroll;
 	}
+} */
+
+/* Modifications to be W3C valid: min-width and max-width */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+	.b-parallax {
+		background-attachment: scroll;
+	}
 }
+
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+	.b-parallax {
+		background-attachment: scroll;
+	}
+}
+
+/* END W3C errors */
 
 @media (max-width: 991px) {
 	.container {
@@ -874,21 +892,36 @@ h4 {
 		overflow-x: hidden;
 		position: relative;
 	}
-	.bloc {
+
+	/* W3C errors: constant(safe-area-inset-left) and constant(safe-area-inset-right) */
+
+	/* .bloc {
 		padding-left: constant(safe-area-inset-left);
 		padding-right: constant(safe-area-inset-right);
-	}
+	} */
+
+	/* No modifications, just remove them */
+
+	/* END W3C errors */
+
 	.bloc-group,
 	.bloc-group .bloc {
 		display: block;
 		width: 100%;
 	}
+
+	/* W3C errors: constant(safe-area-inset-left) and constant(safe-area-inset-right) */
+
 	.bloc-fill-screen .fill-bloc-top-edge,
 	.bloc-fill-screen .fill-bloc-bottom-edge {
 		padding: 0 20px;
-		padding-left: constant(safe-area-inset-left);
-		padding-right: constant(safe-area-inset-right);
+		/* padding-left: constant(safe-area-inset-left);
+		padding-right: constant(safe-area-inset-right); */
 	}
+
+	/* No modifications, just remove them */
+
+	/* END W3C errors */
 }
 
 @media (max-width: 767px) {
