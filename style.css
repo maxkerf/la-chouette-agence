@@ -1129,6 +1129,10 @@ h3 {
 	background: #a06950 !important;
 }
 
+.black-background {
+	background-color: #877545;
+}
+
 h2.mg-md.text-center.tc-white {
 	position: relative;
 	text-shadow: #000 0 0 7px;
@@ -1136,10 +1140,6 @@ h2.mg-md.text-center.tc-white {
 
 h1 {
 	text-shadow: #000 0 0 7px;
-}
-
-.black-background {
-	background-color: #877545;
 }
 
 .tc-white {
