@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- renseigner la langue du site -->
 <html lang="fr">
 	<head>
 		<meta charset="utf-8" />
@@ -10,6 +11,7 @@
 			name="viewport"
 			content="width=device-width, initial-scale=1.0, viewport-fit=cover"
 		/>
+		<!-- ajouter la <meta> "robots" -->
 		<meta name="robots" content="index, follow" />
 
 		<link rel="stylesheet" type="text/css" href="./css/bootstrap.css" />
@@ -17,19 +19,24 @@
 		<link rel="stylesheet" type="text/css" href="./css/font-awesome.css" />
 		<link rel="stylesheet" type="text/css" href="./css/et-line.css" />
 
+		<!-- ajouter l'attribut "defer" aux <script> qui importent les fichiers JS -->
 		<script src="./js/jquery-2.1.0.js" defer></script>
 		<script src="./js/bootstrap.js" defer></script>
 		<script src="./js/blocs.js" defer></script>
 		<script src="./js/jquery.touchSwipe.js" defer></script>
 		<script src="./js/gmaps.js" defer></script>
 
+		<!-- modifier l'extension de l'icône du site -->
 		<link rel="shortcut icon" href="favicon.png" type="image/png" />
+		<!-- compléter le <title> -->
 		<title>Entreprise webdesign Lyon | La chouette agence</title>
+		<!-- ajouter la <meta> description -->
 		<meta
 			name="description"
 			content="Entreprise webdesign Lyon : La chouette agence aide votre entreprise à devenir attractive sur internet en développant à vos côtés un site web de qualité."
 		/>
 
+		<!-- ajouter les metatags OpenGraph et Twitter -->
 		<!-- Open Graph data -->
 		<meta
 			property="og:title"
@@ -65,19 +72,24 @@
 		/>
 	</head>
 	<body>
+		<!-- définir une région principale avec <main> -->
 		<!-- Main -->
 		<main class="page-container">
+			<!-- définir l'en-tête avec <header> -->
 			<!-- Header -->
 			<header class="bloc bgc-white l-bloc" id="bloc-0">
 				<div class="container bloc-sm">
 					<nav class="navbar row">
 						<div class="navbar-header">
+							<!-- supprimer le texte caché contenant des mots-clés -->
+							<!-- modifier l'équivalent textuel du lien image (attribut "alt") -->
 							<a class="navbar-brand" href="index.html"
 								><img
 									src="img/la-chouette-agence.png"
 									alt="accueil La chouette agence"
 									height="40"
 							/></a>
+							<!-- supprimer le texte caché contenant des mots-clés -->
 							<button
 								id="nav-toggle"
 								type="button"
@@ -95,6 +107,7 @@
 								<li>
 									<a href="index.html">Accueil</a>
 								</li>
+								<!-- modifier l'URL et le texte du lien -->
 								<li>
 									<a href="contact.html">Contact</a>
 								</li>
@@ -105,6 +118,7 @@
 			</header>
 			<!-- Header END -->
 
+			<!-- définir une région avec <section> -->
 			<!-- Presentation -->
 			<section
 				class="
@@ -122,6 +136,7 @@
 				<div class="container bloc-lg">
 					<div class="row tight-width-whitespace">
 						<div class="col-sm-12">
+							<!-- modifier l'équivalent textuel de l'image (attribut "alt") -->
 							<img
 								src="img/logo.png"
 								class="center-block image-resize-mode"
@@ -131,6 +146,7 @@
 							<h1 class="text-center hero-bloc-text tc-white">
 								La chouette agence
 							</h1>
+							<!-- modifier l'URL et le texte du lien -->
 							<div class="text-center">
 								<a
 									href="contact.html"
@@ -149,11 +165,13 @@
 			</section>
 			<!-- Presentation END -->
 
+			<!-- définir une région avec <section> -->
 			<!-- Services -->
 			<section class="bloc bgc-white l-bloc" id="bloc-2-services">
 				<div class="container bloc-md">
 					<div class="row">
 						<div class="col-sm-12 text-center">
+							<!-- remplacer l'image textuelle par un titre <h2> -->
 							<h2>
 								La chouette agence est une agence de web design qui aide les
 								entreprises à devenir attractives et visibles sur Internet.
@@ -221,6 +239,7 @@
 					</div>
 					<div class="row voffset-lg voffset">
 						<div class="col-xs-12 col-md-8 col-md-offset-2 text-center">
+							<!-- remplacer l'image textuelle par une citation en HTML  -->
 							<figure>
 								<blockquote>
 									<p>
@@ -240,6 +259,7 @@
 			</section>
 			<!-- Services END -->
 
+			<!-- définir une région avec <section> -->
 			<!-- What-i-do -->
 			<section
 				class="
@@ -270,7 +290,9 @@
 								votre site, n’hésitez pas à nous contacter. Nous travaillerons
 								ensemble pour créer des sites beau et bien structurés, qui
 								seront facilement trouvable sur les moteurs de recherche.
-								<br /><br /><a class="ltc-white bold-link" href="contact.html"
+								<br /><br /><!-- Modifier l'URL du lien --><a
+									class="ltc-white bold-link"
+									href="contact.html"
 									>Contactez notre équipe</a
 								><br />
 							</p>
@@ -280,6 +302,7 @@
 			</section>
 			<!-- What-i-do END -->
 
+			<!-- définir une région avec <section> -->
 			<!-- Portfolio -->
 			<section
 				class="bloc bgc-white bg-lines-h2-bg bg-repeat l-bloc"
@@ -288,6 +311,7 @@
 				<div class="container bloc-lg">
 					<div class="row">
 						<div class="col-sm-12 text-center">
+							<!-- remplacer l'image textuelle par un titre <h2> -->
 							<h2>
 								Nous travaillons avec beaucoup de clients, voici nos
 								réalisations.
@@ -295,7 +319,9 @@
 						</div>
 					</div>
 					<div class="row tight-width-whitespace portfolio-row">
+						<!-- donner un sens au composant avec <article> -->
 						<article class="col-sm-6">
+							<!-- modifier l'équivalent textuel du lien image (attribut "alt") -->
 							<a
 								href="#"
 								data-lightbox="img/1.jpg"
@@ -315,7 +341,9 @@
 								lyonnais.
 							</p>
 						</article>
+						<!-- donner un sens au composant avec <article> -->
 						<article class="col-sm-6">
+							<!-- modifier l'équivalent textuel du lien image (attribut "alt") -->
 							<a
 								href="#"
 								data-lightbox="img/2.jpg"
@@ -337,14 +365,16 @@
 						</article>
 					</div>
 					<div class="row tight-width-whitespace portfolio-row">
+						<!-- donner un sens au composant avec <article> -->
 						<article class="col-sm-6">
+							<!-- modifier l'équivalent textuel du lien image (attribut "alt") -->
 							<a
 								href="#"
 								data-lightbox="img/3.jpg"
 								data-gallery-id="gallery-1"
 								data-caption="Création d'un site internet pour un voyageur"
 								data-frame="snapshot-lb"
-								><img
+								><!-- modifier l'extension du fichier image importé --><img
 									src="img/3.jpg"
 									class="img-responsive portfolio-thumb"
 									alt="site web voyageur"
@@ -357,14 +387,16 @@
 								sublimer les vidéos et les articles de ce voyageur.
 							</p>
 						</article>
+						<!-- donner un sens au composant avec <article> -->
 						<article class="col-sm-6">
+							<!-- modifier l'équivalent textuel du lien image (attribut "alt") -->
 							<a
 								href="#"
 								data-lightbox="img/4.jpg"
 								data-gallery-id="gallery-1"
 								data-caption="Conception d'un site pour une agence de mariage"
 								data-frame="snapshot-lb"
-								><img
+								><!-- modifier l'extension du fichier image importé --><img
 									src="img/4.jpg"
 									class="img-responsive portfolio-thumb"
 									alt="site web agence de mariage"
@@ -383,6 +415,7 @@
 			</section>
 			<!-- Portfolio END -->
 
+			<!-- définir une région avec <section> -->
 			<!-- Contact -->
 			<section
 				class="
@@ -402,6 +435,7 @@
 							équipe !
 						</h2>
 						<div class="col-sm-12 text-center">
+							<!-- Modifier l'URL du lien -->
 							<a
 								href="contact.html"
 								class="
@@ -416,6 +450,8 @@
 			</section>
 			<!-- Contact END -->
 
+			<!-- ajouter le bouton de retour vers le haut -->
+			<!-- ajouter un équivalent textuel (attribut "aria-label") et définir un rôle (attribut "role") au bouton -->
 			<!-- ScrollToTop Button -->
 			<a
 				class="bloc-button btn btn-d scrollToTop"
@@ -426,6 +462,7 @@
 			></a>
 			<!-- ScrollToTop Button END-->
 
+			<!-- définir le pied de page avec <header> -->
 			<!-- Footer -->
 			<footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
 				<div class="container bloc-sm">
@@ -437,6 +474,8 @@
 							<div class="row row-no-gutters social">
 								<div class="col-sm-3">
 									<div class="text-center">
+										<!-- ajouter un équivalent textuel (attribut "arial-label") au lien non textuel -->
+										<!-- modifier le lien -->
 										<a
 											class="social"
 											href="https://twitter.com/"
@@ -448,6 +487,8 @@
 								</div>
 								<div class="col-sm-3">
 									<div class="text-center">
+										<!-- ajouter un équivalent textuel (attribut "arial-label") au lien non textuel -->
+										<!-- modifier le lien -->
 										<a
 											class="social"
 											href="https://www.facebook.com/"
@@ -459,6 +500,8 @@
 								</div>
 								<div class="col-sm-3">
 									<div class="text-center">
+										<!-- ajouter un équivalent textuel (attribut "arial-label") au lien non textuel -->
+										<!-- modifier le lien -->
 										<a
 											class="social"
 											href="https://dribbble.com/"
@@ -470,6 +513,8 @@
 								</div>
 								<div class="col-sm-3">
 									<div class="text-center">
+										<!-- ajouter un équivalent textuel (attribut "arial-label") au lien non textuel -->
+										<!-- modifier le lien -->
 										<a
 											class="social"
 											href="https://www.instagram.com/"
@@ -479,7 +524,9 @@
 										></a>
 									</div>
 								</div>
+								<!-- supprimer le texte caché contenant des mots-clés -->
 							</div>
+							<!-- supprimer les liens "spammy" -->
 						</div>
 					</div>
 				</div>

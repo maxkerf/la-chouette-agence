@@ -1076,7 +1076,9 @@ h4 {
 	}
 }
 
-/* Recommendations modifications */
+/* Modifications suite aux recommandations */
+
+/* Images de texte */
 
 h2 {
 	max-width: 600px;
@@ -1099,6 +1101,8 @@ blockquote p {
 figcaption {
 	color: #575757;
 }
+
+/* Contraste des couleurs et taille des textes */
 
 p {
 	font-size: 16px;
@@ -1125,14 +1129,6 @@ h3 {
 	background: #a06950 !important;
 }
 
-.bg-presentation {
-	background-image: url("img/image-de-presentation.jpg");
-}
-
-.img-responsive {
-	margin: 0 auto;
-}
-
 h2.mg-md.text-center.tc-white {
 	position: relative;
 	text-shadow: #000 0 0 7px;
@@ -1149,6 +1145,18 @@ h1 {
 .tc-white {
 	color: #fff !important;
 }
+
+/* Taille et poids des images */
+
+.bg-presentation {
+	background-image: url("img/image-de-presentation.jpg");
+}
+
+.img-responsive {
+	margin: 0 auto;
+}
+
+/* Focus sur les éléments */
 
 a:focus,
 button:focus {

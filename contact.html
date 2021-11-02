@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- renseigner la langue du site -->
 <html lang="fr">
 	<head>
 		<meta charset="utf-8" />
@@ -6,26 +7,33 @@
 			name="viewport"
 			content="width=device-width, initial-scale=1.0, viewport-fit=cover"
 		/>
+		<!-- ajouter la <meta> "robots" -->
 		<meta name="robots" content="index, follow" />
 
+		<!-- corriger l'URL erronée des fichiers CSS et JS importés -->
 		<link rel="stylesheet" type="text/css" href="./css/bootstrap.css" />
 		<link rel="stylesheet" type="text/css" href="style.css" />
 		<link rel="stylesheet" type="text/css" href="./css/font-awesome.css" />
 		<link rel="stylesheet" type="text/css" href="./css/et-line.css" />
 
+		<!-- ajouter l'attribut "defer" aux <script> qui importent les fichiers JS -->
 		<script src="./js/jquery-2.1.0.js" defer></script>
 		<script src="./js/bootstrap.js" defer></script>
 		<script src="./js/blocs.js" defer></script>
 		<script src="./js/jqBootstrapValidation.js" defer></script>
 		<script src="./js/formHandler.js" defer></script>
 
+		<!-- modifier l'extension de l'icône du site -->
 		<link rel="shortcut icon" href="favicon.png" type="image/png" />
+		<!-- modifier le <title> -->
 		<title>Contact | La chouette agence</title>
+		<!-- ajouter la <meta> description -->
 		<meta
 			name="description"
 			content="Contactez La chouette agence Lyon pour redonner vie à votre projet ! Bâtissons ensemble un site web adapté à vos besoins pour développer votre activité."
 		/>
 
+		<!-- ajouter les metatags OpenGraph et Twitter -->
 		<!-- Open Graph data -->
 		<meta property="og:title" content="Contact | La chouette agence" />
 		<meta property="og:type" content="website" />
@@ -55,13 +63,16 @@
 		/>
 	</head>
 	<body>
+		<!-- définir une région principale avec <main> -->
 		<!-- Main -->
 		<main class="page-container">
+			<!-- définir l'en-tête avec <header> -->
 			<!-- Header -->
 			<header class="bloc bgc-white l-bloc" id="bloc-0">
 				<div class="container bloc-sm">
 					<nav class="navbar row">
 						<div class="navbar-header">
+							<!-- modifier l'équivalent textuel du lien image (attribut "alt") -->
 							<a class="navbar-brand" href="index.html"
 								><img
 									src="img/la-chouette-agence.png"
@@ -85,6 +96,7 @@
 								<li>
 									<a href="index.html">Accueil</a>
 								</li>
+								<!-- modifier l'URL et le texte du lien -->
 								<li>
 									<a href="contact.html">Contact</a>
 								</li>
@@ -95,6 +107,7 @@
 			</header>
 			<!-- Header END -->
 
+			<!-- définir une région avec <section> -->
 			<!-- Banner -->
 			<section
 				class="
@@ -137,7 +150,9 @@
 								fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!"
 							>
 								<div class="form-group">
+									<!-- relier <label> à <input> avec l'attribut "for" -->
 									<label for="name">Nom</label>
+									<!-- ajouter un texte exemple avec l'attribut "placeholder" -->
 									<input
 										id="name"
 										class="form-control"
@@ -146,7 +161,9 @@
 									/>
 								</div>
 								<div class="form-group">
+									<!-- relier <label> à <input> avec l'attribut "for" -->
 									<label for="email">Adresse email</label>
+									<!-- ajouter un texte exemple avec l'attribut "placeholder" -->
 									<input
 										id="email"
 										class="form-control"
@@ -156,7 +173,10 @@
 									/>
 								</div>
 								<div class="form-group">
+									<!-- relier <label> à <input> avec l'attribut "for" -->
 									<label for="input_504">Comment nous avez-vous connu ?</label>
+									<!-- ajouter un texte exemple avec l'attribut "placeholder" -->
+									<!-- corriger le type du champ -->
 									<input
 										class="form-control"
 										type="text"
@@ -166,10 +186,13 @@
 									/>
 								</div>
 								<div class="form-group">
+									<!-- relier <label> à <input> avec l'attribut "for" -->
 									<label for="message"
 										>Brief de votre projet (Ajoutez autant de détails que
-										nécessaire)<br /></label
-									><textarea
+										nécessaire)<br
+									/></label>
+									<!-- ajouter un texte exemple avec l'attribut "placeholder" -->
+									<textarea
 										id="message"
 										class="form-control"
 										rows="4"
@@ -202,6 +225,7 @@
 			</div>
 			<!-- Contact form END -->
 
+			<!-- ajouter un équivalent textuel (attribut "aria-label") et définir un rôle (attribut "role") au bouton -->
 			<!-- ScrollToTop Button -->
 			<a
 				class="bloc-button btn btn-d scrollToTop"
@@ -212,6 +236,7 @@
 			></a>
 			<!-- ScrollToTop Button END-->
 
+			<!-- définir le pied de page avec <header> -->
 			<!-- Footer -->
 			<footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
 				<div class="container bloc-sm">
@@ -223,6 +248,8 @@
 							<div class="row row-no-gutters social">
 								<div class="col-sm-3">
 									<div class="text-center">
+										<!-- ajouter un équivalent textuel (attribut "arial-label") au lien non textuel -->
+										<!-- modifier le lien -->
 										<a
 											class="social"
 											href="https://twitter.com/"
@@ -234,6 +261,8 @@
 								</div>
 								<div class="col-sm-3">
 									<div class="text-center">
+										<!-- ajouter un équivalent textuel (attribut "arial-label") au lien non textuel -->
+										<!-- modifier le lien -->
 										<a
 											class="social"
 											href="https://www.facebook.com/"
@@ -245,6 +274,8 @@
 								</div>
 								<div class="col-sm-3">
 									<div class="text-center">
+										<!-- ajouter un équivalent textuel (attribut "arial-label") au lien non textuel -->
+										<!-- modifier le lien -->
 										<a
 											class="social"
 											href="https://dribbble.com/"
@@ -256,6 +287,8 @@
 								</div>
 								<div class="col-sm-3">
 									<div class="text-center">
+										<!-- ajouter un équivalent textuel (attribut "arial-label") au lien non textuel -->
+										<!-- modifier le lien -->
 										<a
 											class="social"
 											href="https://www.instagram.com/"
